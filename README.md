@@ -1,4 +1,3 @@
 # test-private
-
-This is a test repo.
+This is a test repository.
 Pushing from dev to master.
