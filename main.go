@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/IBM/go-sdk-core/v5/core"
-	"github.com/IBM/vpc-go-sdk/vpcclassicv1"
+	"github.com/IBM/vpc-go-sdk/vpcv1"
 )
 
 var URL = "https://us-south.iaas.cloud.ibm.com/v1"
@@ -15,7 +15,7 @@ var APIKey = "YOUR_KEY_here"
 
 func main() {
 	// Gen1 service
-	_, vpcServiceErr := vpcclassicv1.NewVpcClassicV1(&vpcclassicv1.VpcClassicV1Options{
+	_, vpcServiceErr := vpcv1.NewVpcV1(&vpcv1.VpcV1Options{
 		URL: URL,
 		Authenticator: &core.IamAuthenticator{
 			ApiKey: APIKey,
